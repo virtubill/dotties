@@ -46,8 +46,11 @@ main() {
  echo "setting up for react-native.."
  brew install watchman
  sudo gem install cocapodsbrew install watchman
+ 
+ echo "setting up for slack.."
+ brew install --cask slack
 
-# TODO: install xcode
+ # TODO: install xcode
 }
 
 
