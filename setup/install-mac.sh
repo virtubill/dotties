@@ -6,7 +6,7 @@ main() {
  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
  echo "setting up .zshrc file.."
- curl -o ~/.zshrc https://raw.githubusercontent.com/virtbill/dotties/main/.zshrc
+ curl -o ~/.zshrc https://raw.githubusercontent.com/virtubill/dotties/main/.zshrc
 
  echo "setting up brew.."
  sh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -15,7 +15,7 @@ main() {
  brew install vim
 
  mv ~/.vimrc ~/.backup_vimrc
- curl -o ~/.vimrc https://raw.githubusercontent.com/virtbill/dotties/main/.vimrc
+ curl -o ~/.vimrc https://raw.githubusercontent.com/virtubill/dotties/main/.vimrc
 
  if [ ! -d ~/.vim/bundle/Vundle.vim/ ]
   then
