@@ -1,16 +1,12 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 main() {
- echo "downloading dottie files.."
- mkdir ~/.dotties
- git clone git@github.com:virtubill/dotties.git ~/.dotties
-
+ echo "install oh my bash.."
+ bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
+ 
  echo "setting up .zshrc file.."
  mv ~/.bashrc ~/.bakup_bashrcc
- cp ~/.dotties/.bashrc ~/.bashrc
-
- echo "setting up git script.."
- curl -o ~/.dotties/scripts/git-prompt.sh https://raw.githubusercontent.com/git/git/contrib/completion/git-prompt.sh
+ curl -o ~/.bashrc https://raw.githubusercontent.com/virtubill/dotties/main/.bashrc
 
  echo "setting up vim.."
  install vim
