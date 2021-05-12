@@ -5,7 +5,7 @@ main() {
  bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
  
  echo "setting up .zshrc file.."
- mv ~/.bashrc ~/.bakup_bashrcc
+ mv ~/.bashrc ~/.bakup_bashrc
  curl -o ~/.bashrc https://raw.githubusercontent.com/virtubill/dotties/main/.bashrc
 
  echo "setting up vim.."
