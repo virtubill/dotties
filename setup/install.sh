@@ -25,9 +25,9 @@ main() {
  echo "setiing up tig.."
  install tig
 
- echo "setting up brave browser.."
- install brave
-}
+// echo "setting up brave browser.."
+// install brave
+// }
 
 install() {
 if [ -x "$(command -v apt-get)" ]; then sudo apt-get install $1
